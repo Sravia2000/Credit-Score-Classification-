@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Score Classification</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <h1>Credit Score Classification</h1>
+    <form method="post">
+
+        <label for="Age">Age:</label>
+        <input type="text" id="Age" name="Age" required><br>
+
+        <label for="Monthly_Inhand_Salary">Monthly Inhand Salary :</label>
+        <input type="text" id="Monthly_Inhand_Salary" name="Monthly_Inhand_Salary" required><br>
+        
+        <label for="Num_Bank_Accounts">No. of Bank Accounts:</label>
+        <input type="text" id="Num_Bank_Accounts" name="Num_Bank_Accounts" required><br>
+        
+        <label for="Num_Credit_Card">No. of Credit Card:</label>
+        <input type="text" id="Num_Credit_Card" name="Num_Credit_Card" required><br>
+
+        <label for="Interest_Rate">Interest Rate:</label>
+        <input type="text" id="Interest_Rate" name="Interest_Rate" required><br>
+
+        <label for="Num_of_Loan">No. of Loan:</label>
+        <input type="text" id="Num_of_Loan" name="Num_of_Loan" required><br>
+
+        <label for="Delay_from_due_date">Delay from due date:</label>
+        <input type="text" id="Delay_from_due_date" name="Delay_from_due_date" required><br>
+
+        <label for="Num_of_Delayed_Payment">No. of Delayed Payment:</label>
+        <input type="text" id="Num_of_Delayed_Payment" name="Num_of_Delayed_Payment" required><br>
+
+        <label for="Changed_Credit_Limit">Changed Credit Limit:</label>
+        <input type="text" id="Changed_Credit_Limit" name="Changed_Credit_Limit" required><br>
+
+        <label for=" Num_Credit_Inquiries "> No. of Credit Inquiries:</label>
+        <input type="text" id=" Num_Credit_Inquiries " name=" Num_Credit_Inquiries " required><br>
+
+        <label for="Total_EMI_per_month">Total_EMI per month:</label>
+        <input type="text" id="Total_EMI_per_month" name="Total_EMI_per_month" required><br>
+
+        <label for="Amount_invested_monthly">Amount invested monthly:</label>
+        <input type="text" id="Amount_invested_monthly" name="Amount_invested_monthly" required><br>
+
+        <label for="Monthly_Balance">Monthly Balance:</label>
+        <input type="text" id="Monthly_Balance" name="Monthly_Balance" required><br>
+        
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if result %}
+        <h2>Credit Score Category: {{ result }}</h2>
+    {% endif %}
+    
+</body>
+</html>
